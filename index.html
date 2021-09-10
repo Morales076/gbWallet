@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e•wallet</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <!-- Pop up -->
+    <div id="popupbackground">
+        <div id="popup">
+            <form>
+                <a>
+                    <i data-feather="x-square"></i>
+                </a>
+                <label for="title"> Título</label>
+
+                <input type="text" name="title" placeholder="Descrição do lançamento" />
+                <div>
+                    <label for="price"> Preço </label>
+                    <input type="number " min="0" step="0.01" name="price" placeholder="valor em reais (R$)">
+                    <label for="currency">Moeda</label>
+
+                    <select name="currency" id="currency">
+                        <option value="BRL" style="display: none;" selected></option>
+                        <option value="BRL">R$</option>
+                        <option value="USD">US$</option>
+                    </select>
+                </div>
+                <div>
+
+                    <label for="category"> Categoria </label>
+                    <select name="category" id="category">
+                        <option value="saída" style="display: none;" selected></option>
+                        <option value="entrada"> Entrada</option>
+                        <option value="saida"> Saída</option>
+                    </select>
+
+                    <label for="identifier">Identificador</label>
+                    <input type="text " name="identifier" placeholder="Drescrição da Categoria">
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- cabeçalho -->
+    <div id="header">
+        <div class="content">
+            <img src="assets/Logo.svg">
+        </div>
+    </div>
+
+    <!-- cards -->
+    <div id="cards" class="content">
+        <div class="card in">
+            <div class="card-title">
+                <span>Entradas</span>
+                <i data-feather="arrow-up-circle"></i>
+            </div>
+            <h1>R$ 7.000,00</h1>
+        </div>
+
+        <div class="card out">
+            <div class="card-title">
+                <span>Saídas</span>
+                <i data-feather="arrow-down-circle"></i>
+            </div>
+            <h1>R$ 2.000,00</h1>
+        </div>
+
+        <div class="card total">
+            <div class="card-title">
+                <span>Total</span>
+                <i data-feather="dollar-sign"></i>
+            </div>
+            <h1>R$ 5.000,00</h1>
+        </div>
+
+    </div>
+
+
+    </div>
+
+
+
+
+    <!-- tabela -->
+    <div id="table" class="content">
+        <table class="content">
+            <!-- cabeçalho da table  -->
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Preço</th>
+                    <th>Categoria</th>
+                    <th>Data</th>
+
+                </tr>
+            </thead>
+            <!-- body da table -->
+            <tbody>
+
+                <!-- o javascript vai preencher isso dinâmicamente -->
+
+            </tbody>
+
+        </table>
+
+
+
+
+    </div>
+    <div id="addButton">
+        <a>
+            <i data-feather="plus"></i>
+        </a>
+    </div>
+
+    <script>
+        feather.replace()
+    </script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
